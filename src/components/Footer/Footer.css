@@ -1,0 +1,8 @@
+.bg-frame{
+    background-color: #FFEA00;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    border-radius: 20px;
+}

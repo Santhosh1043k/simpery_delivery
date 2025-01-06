@@ -1,0 +1,21 @@
+
+.delivery-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px;
+}
+.options img{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 50%;
+
+}
+.options p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}

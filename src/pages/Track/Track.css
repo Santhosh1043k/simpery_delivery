@@ -1,0 +1,48 @@
+.track{
+    height:  80vh;
+    
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background: url('/header.jpg') no-repeat ;
+  background-size: cover;
+  position: relative;
+  border-radius: 45px;
+}
+/* .track-id{
+    border: 3px solid gray;
+    border-radius: 10px;
+    padding: 90px;
+    box-shadow: 40px;
+} */
+.track-orderid img{
+    height: 30px;
+    width: 30px;
+}
+.track-orderid h2{
+    font-size: xxx-large;
+}
+.form-control{
+    padding: 20px;
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: whitesmoke;
+    
+}
+
+.car{
+    height: 50px;
+    animation: moveCar 10s ease-in-out infinite;
+    margin-left: 100px;
+}
+.input button{
+    background: #6F6963;
+    font-size: 16px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 10px;
+}

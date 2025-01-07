@@ -7,6 +7,7 @@ h2{
     flex-direction: row;
     gap: 20px;
     padding: 20px;
+    overflow: hidden;
 }
 .blog img{
     height: 25vw;

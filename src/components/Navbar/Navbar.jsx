@@ -3,6 +3,7 @@ import './Navbar.css'
 import logo from "../../assets/Simpery.png";
 import track from "../../assets/track.png";
 import order from "../../assets/order.png";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -10,10 +11,10 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={logo} alt="Logo" className='logo' />
+      <Link to='/'><img src={logo} alt="Logo" className='logo' /> </Link>
       <ul className="navbar-menu">
-        <li onClick={()=>setMenu("Home")} className={menu==="Home"?"active":""}>Home</li>
-        <li onClick={()=>setMenu("Track")} className={menu==="Track"?"active":""}>Track</li>
+        <Link to='/'> <li onClick={()=>setMenu("Home")} className={menu==="Home"?"active":""}>Home</li> </Link>
+        <Link to='/track'><li onClick={()=>setMenu("Track")} className={menu==="Track"?"active":""}>Track</li> </Link>
         <li onClick={()=>setMenu("Services")} className={menu==="Services"?"active":""}>Services</li>
         <li onClick={()=>setMenu("Pricing")} className={menu==="Pricing"?"active":""}>Pricing</li>
 
@@ -21,7 +22,7 @@ const Navbar = () => {
       <div className="navbar-right">
         <img src={track} alt="track-icon" className='track-icon' />
         <div className="search-icon">
-          <img src={order} alt="Order-icon" className='order-icon' />
+        <Link to='/track'><img src={order} alt="Order-icon" className='order-icon' /> </Link>
           <div className="dot"></div>
           <button>Sign in</button>
         </div>

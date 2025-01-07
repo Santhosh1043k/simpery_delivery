@@ -26,3 +26,11 @@ a{
   }
   
 }
+@keyframes moveCar {
+  0% {
+    transform: translateX(-100%); /* Start outside the left boundary */
+  }
+  100% {
+    transform: translateX(1550%); /* End outside the right boundary */
+  }
+}

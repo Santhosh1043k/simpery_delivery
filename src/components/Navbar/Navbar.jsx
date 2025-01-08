@@ -5,7 +5,7 @@ import track from "../../assets/track.png";
 import order from "../../assets/order.png";
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
 
     const [menu,setMenu] = useState("Login");
 
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="search-icon">
         <Link to='/track'><img src={order} alt="Order-icon" className='order-icon' /> </Link>
           <div className="dot"></div>
-          <button>Sign in</button>
+          <button onClick={()=>setShowLogin(true)}>Sign in</button>
         </div>
       </div>
     </div>

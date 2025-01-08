@@ -20,7 +20,7 @@ const Track = () => {
           <div className="input">
           <input
           type='number'
-          value='number'
+          
           className="form-control"
           placeholder='Type your order Id'
           />
